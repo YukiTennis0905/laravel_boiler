@@ -9,6 +9,7 @@
 8. mysql.server start
 9. php artisan migrate
 10. php artisan db:seed
+11. php artisan serve
 
 
 
