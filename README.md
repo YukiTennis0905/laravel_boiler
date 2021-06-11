@@ -1,16 +1,40 @@
 ## How to build on local
-1. cp .env.example .env
-2. brew install composer
-3. composer install
-4. npm install
-5. php artisan key:generate
-6. mysql -u root -h localhost
-7. create database test
-8. mysql.server start
-9. php artisan migrate
-10. php artisan db:seed
-11. php artisan serve
+1. .env.sampleを.envにコピーする
+```
+cp .env.example .env
+```
 
+2. composerのインストール
+```
+brew install composer
+composer install
+```
+4. npmを使用しで、node moduleのインストール
+```
+npm install
+```
+5. アプルケーションキーを生成
+```
+php artisan key:generate
+```
+6. mysqlに接続し、.envで定義したデータベースを作成
+```
+mysql -u root -h localhost
+create database test
+```
+7. mysqlサーバーを立ち上げる
+```
+mysql.server start
+```
+8. マイグレーション＆シード入れる
+```
+php artisan migrate
+php artisan db:seed
+```
+9.アプリを立ち上げる
+```
+php artisan serve
+```
 
 
 
