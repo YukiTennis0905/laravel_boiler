@@ -5,7 +5,7 @@
 4. npm install
 5. php artisan key:generate
 6. mysql -u root -h localhost
-7. >> create database test
+7. create database test
 8. mysql.server start
 9. php artisan migrate
 10. php artisan db:seed
